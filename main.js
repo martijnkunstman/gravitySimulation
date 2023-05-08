@@ -97,9 +97,9 @@
   "random"
 );
 
-Math.seedrandom("6");
+Math.seedrandom("center");
 
-let dimension = 1000;
+let dimension = 800;
 let elements = [];
 const canvas = document.getElementById("myCanvas");
 canvas.width = dimension;
@@ -154,11 +154,11 @@ class Element {
 }
 
 function init() {
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 20; i++) {
     elements.push(
       new Element(
         Math.random() * dimension,
-        Math.random() * dimension,
+        Math.random() * dimension ,
         "blue",
         Math.random() * 20,
         { x: 0, y: 0 },
